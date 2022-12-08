@@ -8,7 +8,7 @@ weight: 3
 # **About Me**
 
 Hi I am **{{ site.author.name }}**,<br>
-possibly a corgi, possibly not.  Either way there are really neat things I am up to!
+A Student in Information Management at UIUC. A Programmer. And Always a Learner！
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}

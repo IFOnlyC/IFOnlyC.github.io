@@ -3,12 +3,17 @@
   level: Expert
   color: danger
 
-- name: Go
-  percentage: 80
-  level: Medium
-  color:
+- name: JavaScript
+  percentage: 85
+  level: Expert
+  color: info
 
 - name: Python
+  percentage: 80
+  level: Expert
+  color:
+
+- name: Java
   percentage: 70
-  level: Beginner
+  level: Medium
   color: secondary

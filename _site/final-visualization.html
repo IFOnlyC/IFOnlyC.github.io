@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="(Final Data Visualization) Will Covid_19 Coexist with Human-Beings Forever?">
+  <meta property="og:description" content="This is the final Data Visualization Project "Will Covid_19 Coexist with Human-Beings Forever?", using python, altair and vega-lite for interactive data visu...">
+  <meta property="og:image" content="assets/pngs/final_confirmed_cases.png">
+
+  <title>(Final Data Visualization) Will Covid_19 Coexist with Human-Beings Forever?</title>
+  <meta name="description" content="This is the final Data Visualization Project "Will Covid_19 Coexist with Human-Beings Forever?", using python, altair and vega-lite for interactive data visu...">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>Marc Hu</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="will-covid_19-coexist-with-human-beings-forever">Will Covid_19 Coexist with Human-Beings Forever?</h1>
+<h5 id="group-3">Group 3</h5>
+<h5 id="member-henry-chen-tc30-yizhan-xue-yizhanx2-yichuan-hu-yh42-yuxuan-jiang-yj26">Member: Henry Chen (tc30), Yizhan Xue (yizhanx2), Yichuan Hu (yh42), Yuxuan Jiang (yj26)</h5>
+<p><br /></p>
+<h4 id="overview">Overview</h4>
+
+<h6 id="covid-19-is-caused-by-a-virus-called-sars-cov-2-it-is-a-member-of-the-coronavirus-family-which-also-includes-common-viruses-that-cause-more-serious-but-less-frequent-disorders-coronaviruses-like-many-other-respiratory-viruses-spread-swiftly-by-droplets-that-are-emitted-from-the-mouth-or-nose-when-breathing-coughing-sneezing-or-speaking-covid-19-disease-was-firstly-discovered-in-december-2019-in-wuhan-china-its-very-infectious-and-has-spread-rapidly-over-the-world-nowadays-its-almost-been-three-years-since-first-discovered-the-dsease-is-still-spreading-in-most-of-the-countries-in-the-world-and-it-may-raise-the-problemwill-covid-19-coexist-with-human-beings-forever">Covid-19 is caused by a virus called SARS-CoV-2. It is a member of the coronavirus family, which also includes common viruses that cause more serious but less frequent disorders. Coronaviruses, like many other respiratory viruses, spread swiftly by droplets that are emitted from the mouth or nose when breathing, coughing, sneezing, or speaking. Covid-19 disease was firstly discovered in December, 2019 in Wuhan, China. It’s very infectious and has spread rapidly over the world. Nowadays, it’s almost been three years since first discovered, the dsease is still spreading in most of the countries in the world. And it may raise the problem,will Covid-19 coexist with human-beings forever?</h6>
+
+<h6 id="in-order-to-dig-into-the-topic-further-more-we-searched-all-types-of-dataset-online-and-decided-to-use-the-dataset-called-united-states-covid-19-cases-and-deaths-by-state-over-time-from-datagov-time_series_covid19_deaths_globalcsv-and-time_series_covid19_recovered_globalcsv-from-john-hopkins-university-cssegisanddata-the-cdc-publishes-daily-online-total-figures-of-covid-19-cases-and-deaths-based-on-these-most-recent-figures-provided-by-states-territories-and-other-jurisdictions-data-on-the-covid-19-website-and-the-cdcs-covid-data-tracker-are-used">In order to dig into the topic further more, we searched all types of dataset online and decided to use the dataset called “United States COVID-19 Cases and Deaths by State over Time” from DATA.GOV, “time_series_covid19_deaths_global.csv”, and “time_series_covid19_recovered_global.csv” from John Hopkins University CSSEGISandData. The CDC publishes daily online total figures of COVID-19 cases and deaths. Based on these most recent figures provided by states, territories, and other jurisdictions, data on the COVID-19 website and the CDC’s COVID Data Tracker are used.</h6>
+
+<p><br /></p>
+<h4 id="global-covid-19-trending-analysis">Global Covid-19 Trending Analysis</h4>
+
+<h6 id="to-take-a-glance-at-the-virus-spread-global-trending-we-import-two-datasets-recorded-by-jhulink-httpsgithubcomcssegisanddatacovid-19-which-have-included-both-deaths-data-and-confirmed-data-since-the-dataset-contains-almost-200-countries-we-pick-22-countries-from-every-corner-of-the-world-as-targets">To take a glance at the virus’ spread global trending, we import two datasets recorded by JHU(link: https://github.com/CSSEGISandData/COVID-19), which have included both deaths data and confirmed data. Since the dataset contains almost 200 countries, we pick 22 countries from every corner of the world as targets.</h6>
+
+<h6 id="as-we-can-see-in-these-particular-data-visualizations-below-are-the-numbers-of-confirmed-cases-and-death-cases-of-covid-19-by-month-from-january-2020-to-december-2022-you-may-get-confused-by-the-great-drop-of-number-at-the-point-of-december-2022-that-is-because-the-time-this-report-was-formed-it-was-just-the-very-beginning-of-december-and-the-number-cannot-prove-anythingbut-still-in-the-period-between-january-2020-and-november-2022-we-can-get-an-estimate-trend-of-covid-19-in-january-2020-some-countries-like-china-started-to-have-cases-then-later-some-other-countries-started-to-have-cases-as-well-the-curves-shows-very-clear-that-it-is-gradually-flatten-this-means-the-cases-and-deaths-numbers-are-dropping-down-gradually-from-these-two-visualizations-we-can-conclude-that-the-death-rate-of-covid-is-dropping-very-quick-but-the-covid-19-seems-to-be-coexisted-with-human-beings-forever">As we can see in these particular data visualizations below are the numbers of confirmed cases and death cases of Covid-19 by month from January 2020 to December, 2022. You may get confused by the great drop of number at the point of December, 2022. That is because the time this report was formed, it was just the very beginning of December and the number cannot prove anything.But still in the period between January 2020 and November 2022, we can get an estimate trend of Covid-19. In January 2020, some countries like China started to have cases. Then later, some other countries started to have cases as well. The curves shows very clear that it is gradually flatten. This means the cases and deaths numbers are dropping down gradually. From these two visualizations, we can conclude that the death rate of Covid is dropping very quick, but the Covid-19 seems to be coexisted with human-beings forever.</h6>
+<vegachart schema-url="/assets/json/countries_confirmed_lines.json" style="width: 100%"></vegachart>
+<vegachart schema-url="/assets/json/countries_death_lines.json" style="width: 100%"></vegachart>
+
+<p><br /></p>
+<h4 id="us-domestic-trending-analysis">US Domestic Trending Analysis</h4>
+
+<h6 id="athrough-making-comparisons-among-countries-there-is-a-similar-trend-that-the-number-of-people-influenced-by-the-virus-increases-sharply-at-the-front-than-remain-stable-and-decreases-gradually-in-this-year-the-toxicity-of-the-virus-is-gradually-weakening-what-about-the-united-states-does-each-state-has-the-same-trend">AThrough making comparisons among countries, there is a similar trend that the number of people influenced by the virus increases sharply at the front, than remain stable, and decreases gradually in this year. The toxicity of the virus is gradually weakening. What about the United States? Does each state has the same trend?</h6>
+
+<h6 id="to-understand-domestic-situation-better-we-find-data-recorded-by-cdc-link-httpsdatacdcgov-as-we-can-see-in-the-bubble-plot-below-it-shows-the-new-cases-number-of-covid-19-in-united-states-within-different-states-in-the-graph-the-bigger-the-bubble-is-the-bigger-the-number-it-represent-case-number-is-because-of-the-difference-in-population-some-big-states-like-california-texas-and-florida-always-have-the-top-new-cases-numbers-this-fact-is-also-reflected-in-the-bar-chart-of-sum-of-new-cases-below-even-though-there-are-a-lot-of-elements-in-the-graph-we-can-still-get-an-estimate-trend-of-new-cases-count-for-the-data-we-have-here-from-march-2020-to-october-2022-it-some-times-increase-and-some-times-decrease-and-we-dont-see-any-significant-decrease-or-increase-trend-of-it-so-after-the-analysis-we-thought-the-covid-19-diease-is-still-going-to-be-out-there-and-may-coexist-with-human-beings-forever">To understand domestic situation better, we find data recorded by CDC (link: https://data.cdc.gov/). As we can see in the bubble plot below, it shows the new cases number of Covid-19 in United States within different states. In the graph, the bigger the bubble is, the bigger the number it represent case number is. Because of the difference in population, some big states like California, Texas and Florida always have the top new cases numbers. This fact is also reflected in the bar chart of sum of new cases below. Even though there are a lot of elements in the graph, we can still get an estimate trend of new cases count. For the data we have here, from March 2020 to October 2022, it some times increase and some times decrease and we don’t see any significant decrease or increase trend of it. So after the analysis, we thought the Covid-19 diease is still going to be out there and may coexist with human-beings forever.</h6>
+
+<vegachart schema-url="/assets/json/final_dashboard.json" style="width: 100%"></vegachart>
+
+<h6 id="the-most-likely-long-term-result-of-covid-19-is-that-the-disease-becomes-endemic-in-significant-portions-of-the-world-continuously-circulating-among-people-but-generating-fewer-occurrences-of-severe-illness-covid-19-may-eventually-turn-into-a-minor-pediatric-sickness-similar-to-the-four-endemic-human-coronaviruses-that-cause-the-common-cold-years-or-even-decades-from-now">The most likely long-term result of Covid-19 is that the disease becomes endemic in significant portions of the world, continuously circulating among people but generating fewer occurrences of severe illness. COVID-19 may eventually turn into a minor pediatric sickness, similar to the four endemic human coronaviruses that cause the common cold, years or even decades from now.</h6>
+
+<p><br /></p>
+<h4 id="work-cited">Work Cited</h4>
+<h6 id="1-multi-line-highlight-multi-line-highlight---altair-420-documentation-nd-retrieved-december-2-2022-from-httpsaltair-vizgithubiogallerymultiline_highlighthtml">1. Multi-line highlight. Multi-Line Highlight - Altair 4.2.0 documentation. (n.d.). Retrieved December 2, 2022, from https://altair-viz.github.io/gallery/multiline_highlight.html</h6>
+<h6 id="2-main-dataset-httpsdatacdcgov">2. Main Dataset: https://data.cdc.gov/</h6>
+<h6 id="3-contextual-datasets-httpsgithubcomcssegisanddatacovid-19">3. Contextual Datasets: https://github.com/CSSEGISandData/COVID-19</h6>
+
+<!-- these are written in a combo of html and liquid -->
+
+<div class="left">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://data.cdc.gov/api/views/9mfq-cb36/rows.csv">
+  The Data
+</a>
+</div>
+
+<div class="right">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/MarcccHuuu/MarcccHuuu.github.io/blob/main/python_notebooks/Group3-FinalProject-Part3.ipynb">
+  The Analysis
+</a>
+</div>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>A. P. Corgi</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:yichuanhu03@gmail.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/MarcccHuuu"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.youtube.com/your_channel_name"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#ff0000'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-youtube fa-1x"></i>
+    </a>
+
+</div><small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+
+</footer>
+
+
+<!-- Custom page specific js files -->
+  
+    <script src='/assets/js/vega.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-lite.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-embed.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/justcharts.js' type="text/javascript"></script>
+  
+
+
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>

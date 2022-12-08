@@ -1,26 +1,23 @@
-- title: Student, Harvard CS
-  from: 2013
-  to: 2018
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Student, Master of Information Management
+  school: University of Illinois Urbana-Champaign, IL
+  from: 2021/08
+  to: 2023/05
+  courses: IS 445 - Data Visualization, IS 577 - Data Mining, IS 515 - Information Modeling, CS 409 - The Art of Web Programming
 
-- title: Software Engineer, Google, UK
-  from: 2018
-  to: present
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Software Test and Development Engineer
+  school: Shanghai Graphic Design Information Corp., China
+  from: 2020/07
+  to: 2021/06
+  description:
 
-- title: AMAZING STUFF
-  from: 2019
-  to: present
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: System Development Intern
+  school: Zhejiang Keboda Industry Corp, China
+  from: 2019/05
+  to: 202/05
+  description:
+
+- title: Student, Bachelor of Computer Science and Technology
+  school: Shanghai Second Polytechnic University, China
+  from: 2016/09
+  to: 2020/07
+  description:
